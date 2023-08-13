@@ -1,0 +1,45 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_button {
+    width: 200px;
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+
+
+    &:hover {
+        background-color: lightgray;
+    }
+
+    & i {
+       @extend .center;
+        margin-right: 30px;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        background-color: dodgerblue;
+        color: white;
+    }
+}
+
+.menu_item {
+    @extend .center;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    border-bottom: 1px solid gray;
+    transition: height .3s;
+}
+
+.menu_item_active {
+    width: 200px;
+    height: 50px;
+    opacity: 1;
+}
