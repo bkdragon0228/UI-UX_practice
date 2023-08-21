@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import HamburgerButton from './components/hamburgerButton';
 import AccordianMenu from './components/accordianMenu';
+import DropDownMenu from './components/dropdownMenu';
 
 function App() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -11,7 +12,8 @@ function App() {
         setIsOpen={(value: boolean) => setIsOpen(value)}
       /> */}
 
-      <AccordianMenu />
+      {/* <AccordianMenu /> */}
+      <DropDownMenu title="number" />
     </div>
   );
 }
