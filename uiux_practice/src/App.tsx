@@ -15,7 +15,7 @@ function App() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const methods = useForm<LoginFormProps>({ criteriaMode: 'all' });
 
-  const onSubmit = (data: LoginFormProps) => {
+  const onSubmit = <T extends object>(data: T) => {
     console.log(data);
   };
 
