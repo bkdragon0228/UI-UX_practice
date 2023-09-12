@@ -10,6 +10,7 @@ import HamburgerButton from './components/hamburgerButton';
 import AccordianMenu from './components/accordianMenu';
 import DropDownMenu from './components/dropdownMenu';
 import Form from './components/form';
+import Carousel from './components/carousel/Carousel';
 
 function App() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -21,16 +22,21 @@ function App() {
 
   return (
     <div className="App">
-      <FormProvider {...methods}>
-        {/* <HamburgerButton
+      {/* <FormProvider {...methods}>
+        <HamburgerButton
         isOpen={isOpen}
         setIsOpen={(value: boolean) => setIsOpen(value)}
-      /> */}
+      />
 
-        {/* <AccordianMenu /> */}
-        {/* <DropDownMenu title="number" /> */}
+        <AccordianMenu />
+        <DropDownMenu title="number" />
         <Form<LoginFormProps> title="Login" onSubmit={onSubmit} list={list} />
-      </FormProvider>
+      </FormProvider> */}
+
+      <Carousel
+        images={['images/1.png', 'images/2.png', 'images/3.png']}
+        interval={3000}
+      />
     </div>
   );
 }
