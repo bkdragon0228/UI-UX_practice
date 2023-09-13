@@ -1,0 +1,33 @@
+.container {
+    padding: 20px;
+    width: 800px;
+    min-height: 500px;
+    border: 1px solid black;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav_button {
+    width: 50px;
+    background-color: transparent;
+}
+
+.nav_button_active {
+    background-color: lightgray;
+}
+
+.contents {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.item {
+    display: none;
+
+}
+
+.item_active {
+    display: block;
+}
