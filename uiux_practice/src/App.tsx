@@ -12,6 +12,8 @@ import DropDownMenu from './components/dropdownMenu';
 import Form from './components/form';
 import Carousel from './components/carousel/Carousel';
 import Tab from './components/tab/Tab';
+import CompoundForm from './components/CompoundForm/CompoundForm';
+import CompoundInput from './components/CompoundForm/CompoundInput';
 
 function App() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
